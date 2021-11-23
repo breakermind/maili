@@ -62,3 +62,6 @@ php artisan vendor:publish --provider="Maili\MailiServiceProvider.php"
 	Maili\MailiServiceProvider::class,
 ]
 ```
+
+## Maili template
+<img src="https://raw.githubusercontent.com/breakermind/maili/main/maili-blade.png" width="100%">
