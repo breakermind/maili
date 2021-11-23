@@ -7,19 +7,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<style type="text/css">
 		body {background: #fff; padding: 0px; margin: 0px;}
+		a {font-weight: 600;}
 		a:hover {color: #f25}
 		.bg {font-size: 16px; font-weight: 400; width: 100%; min-height: 100vh;}
 		.bg * {color: #003399; font-family: 'Outfit', sans-serif; text-decoration: none; box-sizing: border-box; transition: all .6s; max-width: 100%; box-sizing: border-box;}
 		.box {margin: 50px auto; padding: 10px; width: 90%; max-width: 625px; background: #00339906; border-radius: 6px;}
 		.msg {background: #fff; padding: 20px;}
 		.nobg {color: #00339933; padding: 20px; text-align: center;}
-		.link {color: #00339966;}
 		.btn {color: #003399; border: 2px solid #003399; padding: 12px 32px; display: inline-block;}
 		.btn:hover {background: #00339922; color: #003399 !important; cursor: pointer;}
-		.logo {max-height: 90px;}
-		.content {font-weight: 300;}
-		.company {margin: 10px 0px; font-weight: 700; font-size: 18px;}
 		.code {padding: 12px 20px; margin: 10px 0px; border: 1px dotted #003399; text-align: center;}
+		.logo {max-height: 90px;}
+		.content {font-weight: 400;}
+		.company {margin: 10px 0px; font-weight: 700; font-size: 18px;}
+		.link {color: #00339966; font-size: 14px;}
 	</style>
 </head>
 <body>
@@ -51,7 +52,7 @@
 
 			@if(!empty($mail->unsubscribe))
 				<div class="nobg">
-					<a href="{{ $mail->unsubscribe }}" class="link">@lang('Unsubscribe')</a>
+					<a href="{{ $mail->unsubscribe }}" class="link" target="__blank">@lang('Unsubscribe')</a>
 				</div>
 			@endif
 
