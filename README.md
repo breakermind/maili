@@ -1,5 +1,5 @@
 # Maili blade template
-Maili laravel blade email template package.
+Maili laravel blade email package.
 
 ## Install
 ```sh
@@ -56,5 +56,9 @@ php artisan vendor:publish --provider="Maili\MailiServiceProvider.php"
 }
 ```
 
-## Email foto
-<img src="https://raw.githubusercontent.com/breakermind/maili/main/maili-blade.png" width="100%">
+### Add service provider to config/app.php (if errors)
+```php
+'providers' => [
+	Maili\MailiServiceProvider::class,
+]
+```
