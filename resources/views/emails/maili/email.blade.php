@@ -9,7 +9,7 @@
 		body {background: #fff; padding: 0px; margin: 0px;}
 		a:hover {color: #f25}
 		.bg {font-size: 16px; font-weight: 400; width: 100%; min-height: 100vh;}
-		.bg * {color: #003399; font-family: 'Outfit', sans-serif; text-decoration: none; box-sizing: border-box; transition: all .6s;}
+		.bg * {color: #003399; font-family: 'Outfit', sans-serif; text-decoration: none; box-sizing: border-box; transition: all .6s; max-width: 100%; box-sizing: border-box;}
 		.box {margin: 50px auto; padding: 10px; width: 90%; max-width: 625px; background: #00339906; border-radius: 6px;}
 		.msg {background: #fff; padding: 20px;}
 		.nobg {color: #00339933; padding: 20px; text-align: center;}
