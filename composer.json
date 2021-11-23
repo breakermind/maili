@@ -1,0 +1,26 @@
+{
+	"name": "breakermind/maili",
+	"type": "library",
+	"license": "MIT",
+	"autoload": {
+		"classmap": [
+			"src/"
+		],
+		"psr-4": {
+			"Maili\\": "src/"
+		}
+	},
+	"authors": [{
+		"name": "Marcin Łukaszewski",
+		"email": "marcin@breakermind.com"
+	}],
+	"minimum-stability": "dev",
+	"require": {},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Maili\\MailiServiceProvider"
+			]
+		}
+	}
+}
