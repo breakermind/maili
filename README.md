@@ -14,7 +14,7 @@ composer update
 ```php
 MAILI_COMPANY="Company Name"
 MAILI_CITY="00-000 City"
-MAILI_STREET="Street 44"
+MAILI_ADDRESS="Street 44"
 MAILI_EMAIL="your@email.here"
 MAILI_MOBILE="+00 100 200 300"
 ```
