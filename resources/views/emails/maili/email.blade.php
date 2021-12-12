@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ $mail->subject }}</title>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -15,7 +16,7 @@
 		.msg {background: #fff; padding: 20px;}
 		.nobg {color: #00339933; padding: 20px; text-align: center;}
 		.btn {color: #003399; border: 2px solid #003399; padding: 12px 32px; display: inline-block;}
-		.btn:hover {background: #00339922; color: #003399 !important; cursor: pointer;}
+		.btn:hover {color: #003399 !important; background: #00339922; cursor: pointer;}
 		.code {padding: 12px 20px; margin: 10px 0px; border: 1px dotted #003399; text-align: center;}
 		.logo {max-height: 90px;}
 		.content {font-weight: 400;}
@@ -42,11 +43,11 @@
 				<p class="content">{!! $mail->bye ?? __('Regards') !!}</p>
 
 				<div class="regards">
-					<div class="company">Company Ltd.</div>
-					<div>00-000 Warsaw</div>
-					<div>Kolorowa 256</div>
-					<div>email@example.com</div>
-					<div>+00 100 200 300</div>
+					<div class="company">{{ env('MAILI_COMPANY', 'Company SA.') }}</div>
+					<div>{{ env('MAILI_CITY', '00-000 Warsaw') }}</div>
+					<div>{{ env('MAILI_ADDRESS', 'Barbarian Street 69') }}</div>
+					<div>{{ env('MAILI_EMAIL', 'your@email.here') }}</div>
+					<div>{{ env('MAILI_MOBILE', '+00 100 200 300') }}</div>
 				</div>
 			</div>
 
